@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>05 (오버하면 상세설명 나타나는 상품목록)</title>
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    a {
+      text-decoration: inherit;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    .items {
+      text-align: center;
+    }
+    .item {
+      position: relative;
+      display: inline-block;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ddd;
+    }
+    .item + .item {
+      margin-left: 10px;
+    }
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 300px;
+      height: 300px;
+      padding: 40px 20px 20px;
+      box-sizing: border-box;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: .5s;
+    }
+    .item:hover .caption {
+      opacity: 1;
+    }
+    .caption a {
+      padding: 7px;
+      border-radius: 3px;
+      background-color: teal;
+      transition: .3s;
+    }
+    .caption a:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <div class="item">
+      <img src="./img/product-01.png" alt="Rirakuma doll 25cm">
+      <div class="caption">
+        <h2>Rirakuma doll 25cm</h2>
+        <p>
+          The owner of the most popular and cute looks Rilakkuma ~! Rilakkuma giant - It is size sale to small size.
+        </p>
+        <p>Price : <s>$12</s> → $10</p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/product-02.png" alt="Connie doll (110cm)">
+      <div class="caption">
+        <h2>Connie doll (110cm)</h2>
+        <p>
+          The owner of the most popular and cute looks Rilakkuma ~! Rilakkuma giant - It is size sale to small size.
+        </p>
+        <p>Price : <s>$42</s> → $40</p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="./img/product-03.png" alt="Cacao Friends figure">
+      <div class="caption">
+        <h2>Cacao Friends figure</h2>
+        <p>
+          The owner of the most popular and cute looks Rilakkuma ~! Rilakkuma giant - It is size sale to small size.
+        </p>
+        <p>Price : <s>$32</s> → $30</p>
+        <a href="#">View Details</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
