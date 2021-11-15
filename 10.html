@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10) before after 가상클래스 활용한 실전 퍼블리싱</title>
+  <style>
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    a {
+      text-decoration: inherit;
+      color: #222;
+    }
+    .gnb a {
+      
+    }
+    .gnb a::before {
+      content: '01';
+      background-color: royalblue;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      text-align: center;
+      font-size: 12px;
+      line-height: 20px;
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+    .gnb a::after {
+      content: 'update';
+      background-color: crimson;
+      font-size: 12px;
+      color: #fff;
+      margin-left: 5px;
+      padding: 2px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="gnb">
+    <a href="javascript:void(0)">CodingWorks Online Class</a>
+  </div>
+</body>
+</html>
