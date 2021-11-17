@@ -65,10 +65,27 @@
       border-radius: 3px;
     }
 
-    .skill__progress>div {
+    .skill__progress > div {
       height: 10px;
       background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       animation: show 1s;
+      animation-fill-mode: both;
+    }
+
+    .skills .skill:nth-of-type(1) .skill__progress > div {
+      animation-delay: 0s;
+    }
+    .skills .skill:nth-of-type(2) .skill__progress > div {
+      animation-delay: .2s;
+    }
+    .skills .skill:nth-of-type(3) .skill__progress > div {
+      animation-delay: .4s;
+    }
+    .skills .skill:nth-of-type(4) .skill__progress > div {
+      animation-delay: .6s;
+    }
+    .skills .skill:nth-of-type(5) .skill__progress > div {
+      animation-delay: .8s;
     }
 
     @keyframes show {
@@ -102,7 +119,7 @@
     </div>
     <div class="skill">
       <p>
-        <span>jQuery</span>
+        <span>JavaScript</span>
         <span>65%</span>
       </p>
       <div class="skill__progress">
@@ -111,7 +128,7 @@
     </div>
     <div class="skill">
       <p>
-        <span>Photoshop</span>
+        <span>jQuery</span>
         <span>70%</span>
       </p>
       <div class="skill__progress">
@@ -120,7 +137,7 @@
     </div>
     <div class="skill">
       <p>
-        <span>Illustrator</span>
+        <span>Photoshop</span>
         <span>82%</span>
       </p>
       <div class="skill__progress">
